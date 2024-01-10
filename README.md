@@ -1,8 +1,10 @@
 # visionary_sign_detector
 
+## Introduction
+In this project, we leveraged the comprehensive Cityscapes Dataset to focus on a crucial aspect of autonomous driving systems - traffic sign recognition and interpretation. Our objective was to develop a system that not only accurately identifies traffic signs in urban scenes but also provides a clear understanding of their meaning, which is essential for any effective Autonomous Driving Assistant System (ADAS).
+
+
 ## Data Source
+The [Cityscapes Dataset](https://www.cityscapes-dataset.com) is an extensive collection designed for advancing semantic urban scene understanding, primarily in the context of autonomous driving. This dataset features a comprehensive set of stereo video sequences, meticulously recorded in urban street scenes across 50 different cities. A standout aspect of the Cityscapes Dataset is its high-quality pixel-level annotations for 5,000 frames, complemented by coarser annotations for an additional 20,000 frames. These annotations encompass a wide range of urban scenarios, captured under various seasonal, weather, and lighting conditions.
 
-For this project, we utilized the [Cityscapes Dataset](https://www.cityscapes-dataset.com), an expansive and detailed collection specifically designed for the semantic understanding of urban street scenes, with a particular focus on applications in autonomous driving. This dataset includes a diverse array of stereo video sequences captured in the streets of 50 different cities. What sets the Cityscapes Dataset apart is its exceptional quality of pixel-level annotations provided for 5,000 frames, along with coarser annotations for an additional 20,000 frames. These annotations cover a broad spectrum of urban environments, recorded under various conditions such as different seasons, weather, and times of day.
-
-As a benchmark in the computer vision community, the Cityscapes Dataset is instrumental for tasks like semantic segmentation, object detection, and instance-level segmentation. The dataset offers comprehensive annotations that categorize individual pixels into classes such as roads, sidewalks, cars, pedestrians, and more. This level of detail makes the Cityscapes Dataset an indispensable resource for training and evaluating computer vision models, particularly those designed to navigate and understand complex urban landscapes.
-
+This dataset serves as a benchmark in the field of computer vision, offering an essential tool for tasks such as semantic segmentation, object detection, and instance-level segmentation. Its rich annotations cover numerous classes, including roads, sidewalks, vehicles, and pedestrians, among others. The Cityscapes Dataset's detailed and diverse data make it an invaluable asset for researchers and practitioners looking to train and evaluate computer vision models on complex, real-world urban scenes.
