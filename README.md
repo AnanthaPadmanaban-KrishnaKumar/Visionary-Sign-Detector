@@ -50,3 +50,33 @@ In summary, Gemini AI elevates our project from mere detection to intelligent in
 - **Exceptional Accuracy in Traffic Sign Segmentation**: The precision of the YOLOv8 model, coupled with its tailored adaptation for traffic sign segmentation, has resulted in exceptional accuracy. This is especially crucial in the complex and varied environments typical of urban settings. Our model's ability to discern and accurately interpret traffic signs greatly enhances the reliability of the ADAS in navigating safely through these challenging scenarios.
 - **Innovative Interpretation of Traffic Signs**: Integrating the Gemini AI Pro Vision Model has brought a new dimension to our project. This model's ability to not only detect but also understand and describe traffic signs adds an invaluable layer of intelligence to the ADAS. This feature goes beyond mere detection, offering a nuanced interpretation essential for sophisticated decision-making in autonomous driving.
 - **Seamless Integration with ADAS**: Achieving real-time processing and interpretation capability has been a crucial goal and success of this project. The seamless integration of our traffic sign detection and interpretation system with ADAS ensures that autonomous vehicles are equipped with up-to-the-moment, accurate information about road signs. This capability is fundamental to the safety and efficiency of autonomous vehicles, enabling them to make informed decisions instantaneously.
+
+## Drawback
+One of the main drawbacks of our current project is the significant amount of time taken by the Gemini AI Large Language Model (LLM) for processing and interpretation. This delay poses a challenge to the real-time applicability of our system in autonomous driving scenarios. Since timely decision-making is critical in ADAS, any lag, particularly in the interpretation phase, can potentially impact the safety and effectiveness of autonomous vehicles.
+
+## Future Directions
+As we advance our project to improve the efficiency and real-time applicability of our system for autonomous driving scenarios, we are integrating a strategic Natural Language Processing (NLP) component along with our ongoing efforts in Model Simplification and Hybrid Model Development. This integration aims to address the processing time challenges of the Gemini AI model. Our three-pronged approach now includes:
+
+### Model Simplification
+We are refining the Gemini AI model to be more focused and efficient for traffic sign interpretation, which involves:
+
+- **Narrowing the Scope**: Tailoring the model specifically for traffic sign recognition to minimize computational load.
+- **Optimizing the Architecture**: Streamlining the model's structure to enhance processing speed while ensuring accurate traffic sign interpretation.
+- **Enhanced Feature Selection**: Focusing on essential features for traffic sign detection to quicken the interpretation process.
+
+### Hybrid Model Development
+We are concurrently developing a hybrid model that leverages the strengths of both rule-based systems and AI, including:
+
+- **Utilizing Rule-Based Systems**: Implementing rule-based algorithms for the immediate recognition of standard and clear-cut traffic signs.
+- **Leveraging AI for Complexity**: Reserving the AI component for more complex or ambiguous signs that require deeper understanding.
+
+### NLP-Enhanced Semantic Interpretation
+Integrating NLP to enhance the interpretative capabilities of our system, focusing on:
+
+- **Semantic Analysis of Traffic Signs**: Using NLP to analyze and understand the textual information on traffic signs. This will allow the system to comprehend messages and instructions on signs, like speed limits or cautionary advice, which are crucial for safe navigation.
+- **Synergistic Integration with AI and Rule-Based Systems**: The NLP component will work in tandem with both the AI and rule-based elements of our hybrid model. For signs with textual content, NLP will provide quick semantic understanding, while the AI component will handle complex interpretations that require contextual analysis.
+
+By incorporating these three approaches – Model Simplification, Hybrid Model Development, and NLP-Enhanced Semantic Interpretation – we aim to significantly reduce the inference time of our system. This integration is expected to not only improve the real-time functionality of our ADAS but also establish new standards for efficiency and reliability in traffic sign interpretation within the autonomous driving industry.
+
+## Conclusion:
+In conclusion, our project marks a significant stride in enhancing Autonomous Driving Assistant Systems by synergistically combining the precision of Ultralytics YOLOv8 in traffic sign detection with the advanced interpretative capabilities of Gemini AI Pro Vision Model. This integration has led to a breakthrough in real-time, accurate traffic sign interpretation, crucial for safe and efficient autonomous navigation. By bridging the gap between detection and interpretation, our project sets a new benchmark in the realm of autonomous driving technology, paving the way for safer, more intelligent, and adaptable autonomous vehicles.
