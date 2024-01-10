@@ -39,6 +39,7 @@ In our project, Gemini AI plays an integral and transformative role. Once the tr
 
 In summary, Gemini AI elevates our project from mere detection to intelligent interpretation, making it a cornerstone of our advanced ADAS. Its ability to process and understand traffic signs in real time and in complex environments significantly enhances the overall safety and effectiveness of autonomous driving systems.
 
+## Why the combination of YOLOv8 and Gemini AI??
 - **Focused Interpretation**: Gemini AI excels in general image interpretation but lacked the ability to focus on specific regions like traffic signs.
 - **Precise Segmentation**: YOLOv8 is renowned for its precise object detection and segmentation, filling the gap in Gemini AI's capabilities.
 - **Combination Benefits**: The integration directs Gemini AI's interpretive power to precisely the segmented traffic signs by YOLOv8.
