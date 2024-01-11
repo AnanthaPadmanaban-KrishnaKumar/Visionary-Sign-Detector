@@ -1,7 +1,5 @@
 # Visionary-Sign-Detector
-<p float="left">
-  <img src="https://github.com/AnanthaPadmanaban-KrishnaKumar/Visionary-Sign-Detector/blob/main/asset/processed_video.gif"/>
-</p>
+![U-Net Architecture with VGG Backbone](https://github.com/AnanthaPadmanaban-KrishnaKumar/Visionary-Sign-Detector/blob/main/asset/processed_video.gif)
 ## Introduction
 In this project, we leveraged the comprehensive Cityscapes Dataset to focus on a crucial aspect of autonomous driving systems - traffic sign recognition and interpretation. Our objective was to develop a system that not only accurately identifies traffic signs in urban scenes but also provides a clear understanding of their meaning, which is essential for any effective Autonomous Driving Assistant System (ADAS).
 
@@ -81,9 +79,9 @@ By incorporating these two approaches – Hybrid Model Development, and NLP-Enha
 ## Running the Project
 
 1. run git clone https://github.com/akash6murali/visionary-sign-detector.git in your terminal.
-once clone is complete you should see a directory by the name visionary-sign-detector.
-cd server-app
-inside this directory you will build a container with command: docker build --no-cache -t model-service -f Dockerfile .
+2. once clone is complete you should see a directory by the name visionary-sign-detector.
+3. cd server-app
+4. inside this directory you will build a container with command: docker build --no-cache -t model-service -f Dockerfile .
 The above step will build the container by exposing port 5001 to the localhost.
 we build a docker network for the server and the client to communicate with each other with the command: docker network create road_signboard_network
 we attach the model-service image to this container by mapping the localhost port 5001 with the docker container port 5001 with the command: docker run -d --name model-server --network road_signboard_network -p 5001:5001 model-service
