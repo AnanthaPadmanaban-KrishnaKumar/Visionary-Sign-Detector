@@ -1,5 +1,7 @@
 # Visionary-Sign-Detector
-
+<p float="left">
+  <img src="https://github.com/AnanthaPadmanaban-KrishnaKumar/Visionary-Sign-Detector/blob/main/asset/processed_video.gif" width="49%" />
+</p>
 ## Introduction
 In this project, we leveraged the comprehensive Cityscapes Dataset to focus on a crucial aspect of autonomous driving systems - traffic sign recognition and interpretation. Our objective was to develop a system that not only accurately identifies traffic signs in urban scenes but also provides a clear understanding of their meaning, which is essential for any effective Autonomous Driving Assistant System (ADAS).
 
