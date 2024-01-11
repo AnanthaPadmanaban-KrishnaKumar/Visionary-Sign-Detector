@@ -49,8 +49,8 @@ In summary, Gemini AI elevates our project from mere detection to intelligent in
 - **Improved Decision-Making**: The combination enhances the decision-making process in our Autonomous Driving Assistant System (ADAS).
 
 <p float="left">
-  <img src="https://github.com/AnanthaPadmanaban-KrishnaKumar/Visionary-Sign-Detector/blob/main/asset/frame_26_batch_2_0.jpg" width="49%" style="margin-right: 2%;" />
-  <img src="https://github.com/AnanthaPadmanaban-KrishnaKumar/Visionary-Sign-Detector/blob/main/asset/frame_26.jpg" width="49%" />
+  <img src="https://github.com/AnanthaPadmanaban-KrishnaKumar/Visionary-Sign-Detector/blob/main/asset/frame_26.jpg" width="49%" style="margin-right: 2%;" />
+  <img src="https://github.com/AnanthaPadmanaban-KrishnaKumar/Visionary-Sign-Detector/blob/main/asset/frame_26_batch_2_0.jpg" width="49%" />
 </p>
 
 ## Major Achievements
