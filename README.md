@@ -76,22 +76,46 @@ Integrating NLP to enhance the interpretative capabilities of our system, focusi
 
 By incorporating these two approaches – Hybrid Model Development, and NLP-Enhanced Semantic Interpretation – we aim to significantly reduce the inference time of our system. This integration is expected to not only improve the real-time functionality of our ADAS but also establish new standards for efficiency and reliability in traffic sign interpretation within the autonomous driving industry.
 
-### Running the Project
-1. run git clone https://github.com/akash6murali/visionary-sign-detector.git in your terminal.
-2. once clone is complete you should see a directory by the name visionary-sign-detector.
-3. cd server-app
-4. inside this directory you will build a container with command: docker build --no-cache -t model-service -f Dockerfile .
-5. The above step will build the container by exposing port 5001 to the localhost.
-6. we build a docker network for the server and the client to communicate with each other with the command: docker network create road_signboard_network
-7. we attach the model-service image to this container by mapping the localhost port 5001 with the docker container port 5001 with the command: docker run -d --name model-server --network road_signboard_network -p 5001:5001 model-service
-8. with the above command executed you should see the moder-server attached to the network. Now cd client-app
-9. sudo docker build --no-cache -t client-app -f Dockerfile .
-10. finally we attach client app to the network so that the communication can happen between the two containers with the command: docker run -d --name client-app --network road_signboard_network \                                
-    -v /give/your/corresponding/images/in/this/directory:/input \
-    -v /give/the/corresponding/directory/where/the/output/images/needs/to/be/stored:/output \
-    client-app
-11. if you were able to successfully execute all this commands you can see the output in the path mentioned in step 10.
-12. ******ONE IMPORTANT STEP********: you need to generate your own API from here: [API docs](https://deepmind.google/technologies/gemini/#build-with-gemini) and place it in the config.py file in the client-app to access google's gemini vision model.
+# Step 1: Clone the GitHub repository
+git clone https://github.com/akash6murali/visionary-sign-detector.git
+
+# Step 2: Change to the cloned directory
+# (Assuming the directory is named visionary-sign-detector)
+cd visionary-sign-detector
+
+# Step 3: Change to the server application directory
+cd server-app
+
+# Step 4: Build the Docker container for the model service
+docker build --no-cache -t model-service -f Dockerfile 
+
+# Step 5: Expose port 5001 to the localhost when building the container
+# (This step is included in step 4 with the Docker build command)
+
+# Step 6: Create a Docker network for communication between server and client
+docker network create road_signboard_network
+
+# Step 7: Run the model-service image as a container within the network
+docker run -d --name model-server --network road_signboard_network -p 5001:5001 model-service
+
+# Step 8: Check that the model-server container is attached to the network
+# (This is a confirmation step, no command required)
+
+# Step 9: Build the Docker container for the client application
+sudo docker build --no-cache -t client-app -f Dockerfile 
+
+# Step 10: Attach the client app container to the network and set up volume mapping
+docker run -d --name client-app --network road_signboard_network \
+-v /path/to/your/input/images:/input \
+-v /path/to/your/output/directory:/output \
+client-app
+
+# Step 11: Check the output in the specified path
+# (This is a verification step, no command required)
+
+# Step 12: Generate your own API key from the API docs and update the config.py file
+# (This step requires you to follow the API documentation for obtaining an API key and is not a CLI command)
+
 
 ## Conclusion:
 In conclusion, our project marks a significant stride in enhancing Autonomous Driving Assistant Systems by synergistically combining the precision of Ultralytics YOLOv8 in traffic sign detection with the advanced interpretative capabilities of Gemini AI Pro Vision Model. This integration has led to a breakthrough in real-time, accurate traffic sign interpretation, crucial for safe and efficient autonomous navigation. By bridging the gap between detection and interpretation, our project sets a new benchmark in the realm of autonomous driving technology, paving the way for safer, more intelligent, and adaptable autonomous vehicles.
