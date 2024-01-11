@@ -46,10 +46,10 @@ In summary, Gemini AI elevates our project from mere detection to intelligent in
 - **Enhanced Accuracy**: This synergy results in detailed and contextually accurate interpretations of traffic signs.
 - **Improved Decision-Making**: The combination enhances the decision-making process in our Autonomous Driving Assistant System (ADAS).
 
-<p float="left">
-  <img src="https://github.com/AnanthaPadmanaban-KrishnaKumar/Visionary-Sign-Detector/blob/main/asset/frame_26.jpg" width="49%" style="margin-right: 2%;" />
-  <img src="https://github.com/AnanthaPadmanaban-KrishnaKumar/Visionary-Sign-Detector/blob/main/asset/frame_26_batch_2_0.jpg" width="49%" />
-</p>
+Sample Input:
+![U-Net Architecture with VGG Backbone](https://github.com/AnanthaPadmanaban-KrishnaKumar/Visionary-Sign-Detector/blob/main/asset/frame_26.jpg)
+Sample Final Result:
+![U-Net Architecture with VGG Backbone](https://github.com/AnanthaPadmanaban-KrishnaKumar/Visionary-Sign-Detector/blob/main/asset/frame_26_batch_2_0.jpg)
 
 ## Major Achievements
 - **Exceptional Accuracy in Traffic Sign Segmentation**: The precision of the YOLOv8 model, coupled with its tailored adaptation for traffic sign segmentation, has resulted in exceptional accuracy. This is especially crucial in the complex and varied environments typical of urban settings. Our model's ability to discern and accurately interpret traffic signs greatly enhances the reliability of the ADAS in navigating safely through these challenging scenarios.
