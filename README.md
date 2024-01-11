@@ -1,6 +1,6 @@
 # Visionary-Sign-Detector
 <p float="left">
-  <img src="https://github.com/AnanthaPadmanaban-KrishnaKumar/Visionary-Sign-Detector/blob/main/asset/processed_video.gif" width="49%" />
+  <img src="https://github.com/AnanthaPadmanaban-KrishnaKumar/Visionary-Sign-Detector/blob/main/asset/processed_video.gif"/>
 </p>
 ## Introduction
 In this project, we leveraged the comprehensive Cityscapes Dataset to focus on a crucial aspect of autonomous driving systems - traffic sign recognition and interpretation. Our objective was to develop a system that not only accurately identifies traffic signs in urban scenes but also provides a clear understanding of their meaning, which is essential for any effective Autonomous Driving Assistant System (ADAS).
@@ -80,7 +80,7 @@ By incorporating these two approaches – Hybrid Model Development, and NLP-Enha
 
 ## Running the Project
 
-run git clone https://github.com/akash6murali/visionary-sign-detector.git in your terminal.
+1. run git clone https://github.com/akash6murali/visionary-sign-detector.git in your terminal.
 once clone is complete you should see a directory by the name visionary-sign-detector.
 cd server-app
 inside this directory you will build a container with command: docker build --no-cache -t model-service -f Dockerfile .
