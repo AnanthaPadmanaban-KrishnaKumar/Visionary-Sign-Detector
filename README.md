@@ -77,7 +77,7 @@ Integrating NLP to enhance the interpretative capabilities of our system, focusi
 By incorporating these two approaches – Hybrid Model Development, and NLP-Enhanced Semantic Interpretation – we aim to significantly reduce the inference time of our system. This integration is expected to not only improve the real-time functionality of our ADAS but also establish new standards for efficiency and reliability in traffic sign interpretation within the autonomous driving industry.
 
 ## Running the Project
-1. run git clone https://github.com/akash6murali/visionary-sign-detector.git in your terminal.
+1. run git clone https://github.com/AnanthaPadmanaban-KrishnaKumar/visionary-sign-detector.git in your terminal.
 2. once clone is complete you should see a directory by the name visionary-sign-detector.
 3. cd server-app
 4. inside this directory you will build a container with command: docker build --no-cache -t model-service -f Dockerfile .
