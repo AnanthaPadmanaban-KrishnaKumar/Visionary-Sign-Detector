@@ -76,45 +76,45 @@ Integrating NLP to enhance the interpretative capabilities of our system, focusi
 
 By incorporating these two approaches – Hybrid Model Development, and NLP-Enhanced Semantic Interpretation – we aim to significantly reduce the inference time of our system. This integration is expected to not only improve the real-time functionality of our ADAS but also establish new standards for efficiency and reliability in traffic sign interpretation within the autonomous driving industry.
 
-# Step 1: Clone the GitHub repository
+#### Step 1: Clone the GitHub repository
 git clone https://github.com/akash6murali/visionary-sign-detector.git
 
-# Step 2: Change to the cloned directory
-# (Assuming the directory is named visionary-sign-detector)
+#### Step 2: Change to the cloned directory
+(Assuming the directory is named visionary-sign-detector)
 cd visionary-sign-detector
 
-# Step 3: Change to the server application directory
+#### Step 3: Change to the server application directory
 cd server-app
 
-# Step 4: Build the Docker container for the model service
+#### Step 4: Build the Docker container for the model service
 docker build --no-cache -t model-service -f Dockerfile 
 
-# Step 5: Expose port 5001 to the localhost when building the container
-# (This step is included in step 4 with the Docker build command)
+#### Step 5: Expose port 5001 to the localhost when building the container
+ (This step is included in step 4 with the Docker build command)
 
-# Step 6: Create a Docker network for communication between server and client
+#### Step 6: Create a Docker network for communication between server and client
 docker network create road_signboard_network
 
-# Step 7: Run the model-service image as a container within the network
+#### Step 7: Run the model-service image as a container within the network
 docker run -d --name model-server --network road_signboard_network -p 5001:5001 model-service
 
-# Step 8: Check that the model-server container is attached to the network
-# (This is a confirmation step, no command required)
+#### Step 8: Check that the model-server container is attached to the network
+ (This is a confirmation step, no command required)
 
-# Step 9: Build the Docker container for the client application
+#### Step 9: Build the Docker container for the client application
 sudo docker build --no-cache -t client-app -f Dockerfile 
 
-# Step 10: Attach the client app container to the network and set up volume mapping
+#### Step 10: Attach the client app container to the network and set up volume mapping
 docker run -d --name client-app --network road_signboard_network \
 -v /path/to/your/input/images:/input \
 -v /path/to/your/output/directory:/output \
 client-app
 
-# Step 11: Check the output in the specified path
-# (This is a verification step, no command required)
+#### Step 11: Check the output in the specified path
+ (This is a verification step, no command required)
 
-# Step 12: Generate your own API key from the API docs and update the config.py file
-# (This step requires you to follow the API documentation for obtaining an API key and is not a CLI command)
+#### Step 12: Generate your own API key from the API docs and update the config.py file
+ (This step requires you to follow the API documentation for obtaining an API key and is not a CLI command)
 
 
 ## Conclusion:
