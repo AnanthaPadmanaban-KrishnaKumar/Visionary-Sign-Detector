@@ -76,23 +76,22 @@ Integrating NLP to enhance the interpretative capabilities of our system, focusi
 
 By incorporating these two approaches – Hybrid Model Development, and NLP-Enhanced Semantic Interpretation – we aim to significantly reduce the inference time of our system. This integration is expected to not only improve the real-time functionality of our ADAS but also establish new standards for efficiency and reliability in traffic sign interpretation within the autonomous driving industry.
 
-## Running the Project
-
+### Running the Project
 1. run git clone https://github.com/akash6murali/visionary-sign-detector.git in your terminal.
 2. once clone is complete you should see a directory by the name visionary-sign-detector.
 3. cd server-app
 4. inside this directory you will build a container with command: docker build --no-cache -t model-service -f Dockerfile .
-The above step will build the container by exposing port 5001 to the localhost.
-we build a docker network for the server and the client to communicate with each other with the command: docker network create road_signboard_network
-we attach the model-service image to this container by mapping the localhost port 5001 with the docker container port 5001 with the command: docker run -d --name model-server --network road_signboard_network -p 5001:5001 model-service
-with the above command executed you should see the moder-server attached to the network. Now cd client-app
-sudo docker build --no-cache -t client-app -f Dockerfile .
-finally we attach client app to the network so that the communication can happen between the two containers with the command: docker run -d --name client-app --network road_signboard_network \
--v /give/your/corresponding/images/in/this/directory:/input
--v /give/the/corresponding/directory/where/the/output/images/needs/to/be/stored:/output
-client-app
-if you were able to successfully execute all this commands you can see the output in the path mentioned in step 10.
-ONE IMPORTANT STEP**: you need to generate your own API from here: API docs and place it in the config.py file in the client-app to access google's gemini vision model. Thank you for your interest in this project, and we look forward to your contributions to this repository.
+5. The above step will build the container by exposing port 5001 to the localhost.
+6. we build a docker network for the server and the client to communicate with each other with the command: docker network create road_signboard_network
+7. we attach the model-service image to this container by mapping the localhost port 5001 with the docker container port 5001 with the command: docker run -d --name model-server --network road_signboard_network -p 5001:5001 model-service
+8. with the above command executed you should see the moder-server attached to the network. Now cd client-app
+9. sudo docker build --no-cache -t client-app -f Dockerfile .
+10. finally we attach client app to the network so that the communication can happen between the two containers with the command: docker run -d --name client-app --network road_signboard_network \                                
+    -v /give/your/corresponding/images/in/this/directory:/input \
+    -v /give/the/corresponding/directory/where/the/output/images/needs/to/be/stored:/output \
+    client-app
+11. if you were able to successfully execute all this commands you can see the output in the path mentioned in step 10.
+12. ******ONE IMPORTANT STEP********: you need to generate your own API from here: [API docs](https://deepmind.google/technologies/gemini/#build-with-gemini) and place it in the config.py file in the client-app to access google's gemini vision model.
 
 ## Conclusion:
 In conclusion, our project marks a significant stride in enhancing Autonomous Driving Assistant Systems by synergistically combining the precision of Ultralytics YOLOv8 in traffic sign detection with the advanced interpretative capabilities of Gemini AI Pro Vision Model. This integration has led to a breakthrough in real-time, accurate traffic sign interpretation, crucial for safe and efficient autonomous navigation. By bridging the gap between detection and interpretation, our project sets a new benchmark in the realm of autonomous driving technology, paving the way for safer, more intelligent, and adaptable autonomous vehicles.
